@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d5612b;
+    color: #333;
+    line-height: 1;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style the header */
+header {
+    font-family: Arial, sans-serif;
+    background-color:#faad89;
+    color: #333;
+    text-align: left;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Style sections */
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
