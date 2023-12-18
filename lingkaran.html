@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulator Lingkaran</title>
+</head>
+<body>
+  <h1>Kalkulator Lingkaran</h1>
+  
+  <form>
+    <label for="radius">Masukkan jari-jari lingkaran:</label>
+    <input type="number" id="radius" name="radius" onchange="hitung()" required>
+  </form>
+
+  <h2>Hasil:</h2>
+  <textarea id="result" rows="4" cols="50" readonly></textarea>
+
+  <script>
+    function hitung() {
+      var radius = parseFloat(document.getElementById('radius').value);
+      var resultTextarea = document.getElementById('result');
+
+      if (!isNaN(radius) && radius > 0) {
+        var luas = Math.PI * radius * radius;
+        var keliling = 2 * Math.PI * radius;
+
+        var resultText = "Luas Lingkaran: " + luas.toFixed(2) + "\nKeliling Lingkaran: " + keliling.toFixed(2);
+
+        resultTextarea.value = resultText;
+      } else {
+        resultTextarea.value = "Masukkan nilai jari-jari yang valid.";
+      }
+    }
+  </script>
+</body>
+</html>
